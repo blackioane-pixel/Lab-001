@@ -5,8 +5,9 @@ CREATE TABLE Books (
     publication_year INT           NULL,
     page_count       INT           NULL,
     publisher        VARCHAR(100)  NULL,
-    CONSTRAINT PK_Books PRIMARY KEY (book_id),
-    CONSTRAINT FK_Books_Authors FOREIGN KEY (author_id)
+    
+CONSTRAINT PK_Books PRIMARY KEY (book_id),
+CONSTRAINT FK_Books_Authors FOREIGN KEY (author_id)
         REFERENCES Authors (author_id)
         ON UPDATE CASCADE
         ON DELETE CASCADE
@@ -18,8 +19,9 @@ CREATE TABLE Subscriptions (
     issue_date    DATE NOT NULL,
     period        INT  NOT NULL,
     return_status BIT  NOT NULL DEFAULT 0,
-    CONSTRAINT PK_Subscriptions PRIMARY KEY (reader_id, book_id, issue_date),
-    CONSTRAINT FK_Subscriptions_Books FOREIGN KEY (book_id)
+    
+CONSTRAINT PK_Subscriptions PRIMARY KEY (reader_id, book_id, issue_date),
+CONSTRAINT FK_Subscriptions_Books FOREIGN KEY (book_id)
         REFERENCES Books (book_id)
         ON UPDATE CASCADE
         ON DELETE CASCADE
