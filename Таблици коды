@@ -1,4 +1,4 @@
-INSERT INTO Subscriptions (reader_id, book_id, issue_date, tale, return_status) VALUES
+INSERT INTO Subscriptions (reader_id, book_id, issue_date, term, return_status) VALUES
 (101, 1, '2025-09-01', 14, 1),
 (102, 2, '2025-09-05', 14, 1),
 (103, 3, '2025-09-10', 30, 1),
