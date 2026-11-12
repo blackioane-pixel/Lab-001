@@ -1,0 +1,27 @@
+INSERT INTO Subscriptions (reader_id, book_id, issue_date, period, return_status) VALUES
+(101, 1, '2025-09-01', 14, 1),
+(102, 2, '2025-09-05', 14, 1),
+(103, 3, '2025-09-10', 30, 1),
+(104, 4, '2025-09-12', 14, 0),
+(105, 5, '2025-09-15', 30, 0),
+(106, 6, '2025-09-18', 14, 1),
+(107, 7, '2025-09-20', 14, 1),
+(108, 8, '2025-09-22', 30, 0),
+(109, 9, '2025-09-24', 14, 0),
+(110, 10, '2025-09-26', 14, 1),
+(111, 11, '2025-09-28', 30, 0),
+(112, 12, '2025-10-01', 14, 0);
+
+INSERT INTO Books (author_id, title, publication_year, page_count, publisher) VALUES
+(1,  'Harry Potter and the Philosopher''s Stone', 1997, 223, 'Bloomsbury'),
+(2,  '1984', 1949, 328, 'Secker & Warburg'),
+(3,  'Pride and Prejudice', 1813, 432, 'T. Egerton'),
+(4,  'The Great Gatsby', 1925, 180, 'Charles Scribner''s Sons'),
+(5,  'War and Peace', 1869, 1225, 'The Russian Messenger'),
+(6,  'Mrs Dalloway', 1925, 224, 'Hogarth Press'),
+(7,  'To Kill a Mockingbird', 1960, 281, 'J. B. Lippincott & Co.'),
+(8,  'Great Expectations', 1861, 544, 'Chapman & Hall'),
+(9,  'The Adventures of Huckleberry Finn', 1884, 366, 'Chatto & Windus'),
+(10, 'Murder on the Orient Express', 1934, 256, 'Collins Crime Club'),
+
+
